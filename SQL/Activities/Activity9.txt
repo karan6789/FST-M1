@@ -1,0 +1,4 @@
+select a.customer_id, a.customer_name, a.salesman_id, b.salesman_name from customers a join salesman b on a.salesman_id=b.salesman_id;
+select a.customer_id, a.customer_name, a.salesman_id, a.grade, b.salesman_name from customers a join salesman b on a.salesman_id=b.salesman_id where a.grade < 300 order by salesman_id ;
+select a.customer_id, a.customer_name, a.salesman_id, a.grade, b.salesman_name, b.commission from customers a join salesman b on a.salesman_id=b.salesman_id where b.commission > 12;
+select a.order_no, a.purchase_amount, a.order_date, a.customer_id, a.salesman_id, b.salesman_name, b.commission, c.customer_name from orders a join salesman b on a.salesman_id=b.salesman_id join customers c on a.customer_id=c.customer_id;

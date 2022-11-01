@@ -1,0 +1,3 @@
+Update salesman Set Grade =200 where salesman_city = 'Rome';
+Update salesman Set Grade =300 where salesman_name = 'James Hoog';
+Update salesman set salesman_name = 'Pierre' where salesman_name = 'McLyon';

@@ -1,0 +1,2 @@
+Alter Table salesman Add grade int;
+Update salesman Set grade =100;
